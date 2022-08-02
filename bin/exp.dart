@@ -25,4 +25,18 @@ void main(List<String> args) {
     print(e);
     print(s);
   }
+
+  //Finaly clause
+  //jodi kno programe run hoy tbe oitar jnno kno exception dekhi nah ota print
+  // krar jnno finaly use kri.and ensure kra hoy je programe ta thik mto run
+  //hoitese kina
+
+  try {
+    int m = 5 ~/ 0;
+    print("m = $m");
+  } catch (e) {
+    print(e);
+  } finally {
+    print("Finaly clause");
+  }
 }
