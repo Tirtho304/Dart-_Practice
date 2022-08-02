@@ -39,4 +39,18 @@ void main(List<String> args) {
   } finally {
     print("Finaly clause");
   }
+
+  try {
+    nocheack(1234);
+  } catch (e) {
+    print("Enter a valid number");
+  }
+}
+
+void nocheack(var n) {
+  if (n.toString().length == 5) {
+    print("Vlaid number");
+  } else {
+    throw new FormatException();
+  }
 }
